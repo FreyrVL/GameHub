@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   width: max-content;
-  margin: 8rem auto 2rem;
+  margin: 6rem auto 2rem;
 }
 h1 {
   font-size: 4rem;
