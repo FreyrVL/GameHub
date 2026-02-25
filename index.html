@@ -12,37 +12,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- -------------------------------------------------------------- -->
     <!-- <link rel="stylesheet" href="../css/reset.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/index.css" /> -->
     <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+
     <title>Projects</title>
   </head>
-  <body>
-    <header>
-      <h1>Welcome to</h1>
-      <img class="b-hive" src="./assets/images/b-hive-lg.png" alt="" />
+  <body class="hover:cursor-default">
+    <header
+      class="flex flex-row w-max ml-auto mr-auto mt-[6rem] mb-[2rem] items-center"
+    >
+      <h1 class="text-6xl font-bold">Welcome to</h1>
+      <img class="h-[7rem]" src="./assets/images/b-hive-lg.png" alt="" />
     </header>
     <main>
-      <div class="projects-list">
-        <a href="#" class="musicmatch project-item unavailable">
+      <div class="flex flex-row w-max m-auto">
+        <a
+          href="#"
+          class="m-[1.5rem] text-center hover:scale-[1.2] opacity-[0.5] cursor-help"
+        >
           <img
+            class="rounded-4xl w-[16rem] hover:border-solid hover:border-red-500 hover:border-[2px]"
             src="./assets/images/projects/MusicMatch.png"
             alt="music match project (unavailable)"
           />
-          <h2>MusicMatch</h2>
+          <h2 class="text-[2rem] font-normal">MusicMatch</h2>
         </a>
-        <a href="./html/login.html" class="gamehub project-item">
+        <a
+          href="./html/login.html"
+          class="m-[1.5rem] text-center hover:scale-[1.2]"
+        >
           <img
+            class="rounded-4xl w-[16rem]"
             src="./assets/images/projects/GameHub.png"
             alt="gamehub project"
           />
-          <h2>GameHub</h2>
+          <h2 class="text-[2rem] font-normal">GameHub</h2>
         </a>
-        <a href="#" class="legomasters project-item unavailable">
+
+        <a
+          href="#"
+          class="m-[1.5rem] text-center hover:scale-[1.2] opacity-[0.5] cursor-help"
+        >
           <img
+            class="rounded-4xl w-[16rem] hover:border-solid hover:border-red-500 hover:border-[2px]"
             src="./assets/images/projects/LegoMasters.png"
             alt="legomasters project (unavailable)"
           />
-          <h2>LegoMasters</h2>
+          <h2 class="text-[2rem] font-normal">LegoMasters</h2>
         </a>
       </div>
     </main>
