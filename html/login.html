@@ -11,36 +11,55 @@
     <!-- Development only, Tailwind will be installed in later versions -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- -------------------------------------------------------------- -->
-    <!-- <link rel="stylesheet" href="../css/reset.css" /> -->
     <link rel="stylesheet" href="../css/general.css" />
-    <link rel="stylesheet" href="../css/login.css" />
     <title>Login</title>
   </head>
-  <body>
-    <header>
-      <img src="../assets/images/b-hive.png" alt="" />
-      <h1>GameHub</h1>
-      <h2>By B-hive</h2>
+  <body class="flex flex-col items-center hover:cursor-default">
+    <header class="flex flex-col mt-[6rem] mb-[1rem]">
+      <img
+        class="w-[7rem] self-center"
+        src="../assets/images/b-hive.png"
+        alt=""
+      />
+      <h1 class="text-[3.6rem] font-bold">GameHub</h1>
+      <h2 class="pl-[0.4rem] text-[1.7rem] font-semibold">By B-hive</h2>
     </header>
     <main>
-      <form action="" method="get" class="form-example">
-        <div class="form-item">
+      <form action="" method="get">
+        <div class="flex flex-col text-[1rem] w-[15rem]">
           <label for="name">Gebruikersnaam/email</label>
-          <input type="text" name="username" class="inputfield" required />
+          <input
+            type="text"
+            name="username"
+            class="mt-[0.4rem] mb-[0.4rem] border-solid border-[1px] border-black rounded-[0.2rem] hover:cursor-text"
+            required
+          />
         </div>
-        <div class="form-item">
+        <div class="flex flex-col text-[1rem] w-[15rem]">
           <label for="email">Wachtwoord</label>
-          <input type="password" name="password" class="inputfield" required />
+          <input
+            type="password"
+            name="password"
+            class="mt-[0.4rem] mb-[0.4rem] border-solid border-[1px] border-black rounded-[0.2rem] hover:cursor-text font-[Verdana]"
+            required
+          />
         </div>
-        <div class="forgot-password">
+        <div
+          class="opacity-[0.8] underline text-[0.8rem] pt-[0.7rem] pb-[0.7rem]"
+        >
           <a href="#">Wachtwoord vergeten ></a>
         </div>
-        <div class="form-item submit-buttons">
+        <div class="flex flex-col text-[1rem] w-[15rem]">
           <input
             type="submit"
             value="&nbsp&nbsp⟶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Login"
+            class="self-center rounded-[1rem] w-[75%] m-[0.2rem] p-[0.4rem] hover:cursor-pointer text-white bg-black text-left"
           />
-          <input type="submit" value="Registeren" />
+          <input
+            type="submit"
+            value="Registeren"
+            class="self-center text-center border-solid rounded-[1rem] border-[1px] w-[75%] m-[0.2rem] p-[0.4rem] hover:cursor-pointer"
+          />
         </div>
       </form>
     </main>
