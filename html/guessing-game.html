@@ -12,9 +12,124 @@
     <link rel="stylesheet" href="../css/general.css" />
     <title>Guessing Game</title>
   </head>
+
+  <!-- # is a placeholder for pagelinks to pages that have yet to be created  -->
+
   <body>
-    <header></header>
-    <main></main>
+    <header class="m-[1rem] flex items-center">
+      <img
+        class="h-[5rem] self-start mr-[6rem]"
+        src="../assets/images/b-hive-lg.png"
+        alt=""
+      />
+      <div class="flex">
+        <div>
+          <input
+            class="rounded-l-[0.5rem] border-solid border-black border-[1px] h-[2rem] w-[20rem]"
+            type="text"
+            name=""
+            id=""
+            value=""
+          />
+        </div>
+        <select
+          name="filter"
+          class="rounded-r-[0.5rem] border-solid border-black border-[1px] h-[2rem]"
+        >
+          <option value="">Most Recent</option>
+          <option value="">In Collection</option>
+        </select>
+        <input
+          type="submit"
+          value="Zoeken"
+          class="ml-[0.5rem] border-black border-solid border-[1px] rounded-[0.4rem] w-[5rem] h-[2rem]"
+        />
+      </div>
+      <div class="flex items-center ml-auto mr-[1rem]">
+        <p class="mr-[1.5rem]">UserName</p>
+        <img
+          src="https://placehold.co/400"
+          alt="profile picture"
+          class="rounded-[10rem] w-[3rem] border-solid border-black border-[1px]"
+        />
+        <select class="border-none focus:outline-none focus:ring-0 w-[1rem]">
+          <option value="#"><a href="#">profile</a></option>
+        </select>
+      </div>
+    </header>
+    <main class="flex">
+      <div class="w-[15rem] pl-[1rem] text-[1.5rem] font-medium">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collecties</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </div>
+
+      <div class="flex">
+        <img
+          src="../assets/images/temp/Doom_cover_art.png"
+          alt="game cover to guess"
+          class="h-[25rem] w-[17rem] ml-[15rem] mr-[2rem] border-black border-solid border-[1rem] rounded-[1rem] blur-sm"
+        />
+        <div>
+          <h1 class="text-[3rem] font-bold">Guess the game!</h1>
+          <p>Kan jij de game raden in 6 pogingen of minder?</p>
+          <p>Test je kennis over de covers van je favoriete games!</p>
+          <div class="flex justify-self-center w-[15rem] mt-[1.5rem]">
+            <img
+              src="../assets/images/icons/heart-filled.png"
+              alt="another attempt left"
+              class="w-[18%]"
+            /><img
+              src="../assets/images/icons/heart-filled.png"
+              alt="another attempt left"
+              class="w-[18%]"
+            /><img
+              src="../assets/images/icons/heart-filled.png"
+              alt="another attempt left"
+              class="w-[18%]"
+            /><img
+              src="../assets/images/icons/heart-filled.png"
+              alt="another attempt left"
+              class="w-[18%]"
+            /><img
+              src="../assets/images/icons/heart-filled.png"
+              alt="another attempt left"
+              class="w-[18%]"
+            /><img
+              src="../assets/images/icons/heart-empty.png"
+              alt="this attempt expired"
+              class="w-[18%]"
+            />
+          </div>
+          <div class="flex flex-col mt-[1rem]">
+            <input
+              type="text"
+              value=""
+              class="ml-[3rem] border-black border-solid border-[2px] rounded-[0.4rem] w-[19rem]"
+            />
+            <div class="text-center flex m-auto mt-[1rem]">
+              <button
+                class="mr-[2rem] border-black border-solid border-[2px] rounded-[0.4rem] p-[0.2rem] w-[6rem]"
+              >
+                Sla Over
+              </button>
+              <button
+                class="border-black border-solid border-[2px] rounded-[0.4rem] p-[0.2rem] w-[6rem]"
+              >
+                Raden!
+              </button>
+            </div>
+          </div>
+          <h2 class="font-bold mt-[1rem]">Vorige pogingen</h2>
+          <ul>
+            <li>Game Naam 1</li>
+            <li>Game Naam 2</li>
+          </ul>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
