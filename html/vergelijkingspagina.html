@@ -4,124 +4,195 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>B-HIVE — Game vergelijking</title>
-    <link rel="stylesheet" href="../css/vergelijking.css" />
-    <!-- Development only, Tailwind will be installed in later versions -->
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- -------------------------------------------------------------- -->
-    <!-- <link rel="stylesheet" href="../css/reset.css" /> -->
     <link rel="stylesheet" href="../css/general.css" />
   </head>
 
-  <body>
-    <header>
-      <a href="/">
-        <img src="../assets/images/b-hive-lg.png" alt="HIVE logo" />
-      </a>
+  <body class="min-h-screen flex flex-col text-black">
+    <header
+      class="flex items-center justify-between px-6 py-4 bg-zinc-900 text-white"
+    >
+      <a href="/"
+        ><img
+          src="../assets/images/b-hive-lg.png"
+          alt="HIVE logo"
+          class="h-12 w-auto"
+      /></a>
 
-      <nav aria-label="Gebruikersmenu">
-        <p>username</p>
-        <button type="button">Thema</button>
-        <button type="button">Menu</button>
+      <nav aria-label="Gebruikersmenu" class="flex items-center gap-4">
+        <a href="#" class="font-medium hover:underline">username</a>
+
+        <button
+          type="button"
+          class="p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 transition"
+        >
+          🌙
+        </button>
+
+        <details class="relative">
+          <summary
+            class="cursor-pointer list-none p-2 rounded-full bg-zinc-800 hover:bg-zinc-700"
+          >
+            ▼
+          </summary>
+
+          <ul
+            class="absolute right-0 mt-2 w-40 bg-white text-black rounded-lg shadow-lg p-2"
+          >
+            <li>
+              <a href="#" class="block px-2 py-1 hover:bg-zinc-100"
+                >Instellingen</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-2 py-1 hover:bg-zinc-100"
+                >Uitloggen</a
+              >
+            </li>
+          </ul>
+        </details>
       </nav>
     </header>
 
-    <aside>
-      <nav aria-label="Hoofdmenu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Collecties</a></li>
-          <li><a href="#">Account</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <div class="flex flex-1">
+      <aside class="w-56 p-6 border-r border-zinc-300">
+        <nav aria-label="Hoofdmenu">
+          <ul class="space-y-4 text-lg font-medium">
+            <li><a href="#" class="block hover:underline">Home</a></li>
+            <li><a href="#" class="block hover:underline">Collecties</a></li>
+            <li><a href="#" class="block hover:underline">Account</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <main>
-      <p>
-        <a href="#">Game vergelijking verlaten</a>
-      </p>
+      <main class="flex-1 p-8">
+        <div class="mx-auto w-full max-w-6xl">
+          <p class="mb-8 text-xl font-semibold">
+            <a href="#" class="hover:underline">Game vergelijking verlaten</a>
+          </p>
 
-      <section aria-label="Game vergelijking">
-        <article>
-          <figure class="logo">
-            <img src="assets/placeholder.png" alt="Game cover links" />
-            <figcaption>
-              <button type="button">Toevoegen</button>
-              <button type="button">Favoriet</button>
-            </figcaption>
-          </figure>
+          <section
+            aria-label="Game vergelijking"
+            class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
+          >
+            <article class="w-full max-w-md space-y-3">
+              <figure class="relative w-full max-w-56">
+                <img
+                  src="../assets/images/projects/doom(1993).jpg"
+                  alt="Game cover links"
+                  class="w-full aspect-square object-cover border rounded-lg"
+                />
 
-          <h1>Game naam</h1>
+                <button
+                  type="button"
+                  class="absolute top-2 left-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center"
+                >
+                  +
+                </button>
 
-          <section>
-            <h2>Genre</h2>
-            <p>genre, genre</p>
+                <button
+                  type="button"
+                  class="absolute top-2 right-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center"
+                >
+                  ♥
+                </button>
+              </figure>
+
+              <h1 class="text-2xl font-bold">Game naam</h1>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Genre</h2>
+                <p>genre, genre</p>
+              </section>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Platform(s)</h2>
+                <p>platform, platform</p>
+              </section>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Rating</h2>
+                <p>★★★☆☆</p>
+              </section>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Beschrijving</h2>
+                <p class="border rounded-lg p-4 text-sm leading-6">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+                  quae culpa, optio fuga cumque reprehenderit nulla dolorum
+                  excepturi, saepe reiciendis vitae maxime quam laborum
+                  necessitatibus itaque, nostrum quos eaque quia!
+                </p>
+              </section>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Gemiddelde speeltijd</h2>
+                <p>1u30min</p>
+              </section>
+            </article>
+
+            <article class="w-full max-w-md space-y-3">
+              <figure class="relative w-full max-w-56">
+                <img
+                  src="../assets/images/projects/Cyberpunk_2077.jpg"
+                  alt="Game cover rechts"
+                  class="w-full aspect-square object-cover border rounded-lg"
+                />
+
+                <button
+                  type="button"
+                  class="absolute top-2 left-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center"
+                >
+                  +
+                </button>
+
+                <button
+                  type="button"
+                  class="absolute top-2 right-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center"
+                >
+                  ♥
+                </button>
+              </figure>
+
+              <h1 class="text-2xl font-bold">Game naam</h1>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Genre</h2>
+                <p>genre, genre</p>
+              </section>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Platform(s)</h2>
+                <p>platform, platform</p>
+              </section>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Rating</h2>
+                <p>★★★☆☆</p>
+              </section>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Beschrijving</h2>
+                <p class="border rounded-lg p-4 text-sm leading-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam, reprehenderit tenetur molestias ab modi aliquid sint
+                  nulla ipsum ipsa animi? Aperiam tempora optio nostrum libero
+                  unde, reiciendis maiores nam nemo?
+                </p>
+              </section>
+
+              <section class="space-y-1">
+                <h2 class="font-semibold">Gemiddelde speeltijd</h2>
+                <p>1u30min</p>
+              </section>
+            </article>
           </section>
+        </div>
+      </main>
+    </div>
 
-          <section>
-            <h2>Platform(s)</h2>
-            <p>platform, platform</p>
-          </section>
-
-          <section>
-            <h2>Rating</h2>
-            <p>.....</p>
-          </section>
-
-          <section>
-            <h2>Beschrijving</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </section>
-
-          <section>
-            <h2>Gemiddelde speeltijd</h2>
-            <p>1u30min</p>
-          </section>
-        </article>
-
-        <figure>
-            <img src="../assets/images/leftrightarrows.png" alt="pijltjes linksrechts">
-        </figure>
-
-        <article>
-          <figure>
-            <img src="assets/placeholder.png" alt="Game cover rechts" />
-            <figcaption>
-              <button type="button">Toevoegen</button>
-              <button type="button">Favoriet</button>
-            </figcaption>
-          </figure>
-
-          <h1>Game naam</h1>
-
-          <section>
-            <h2>Genre</h2>
-            <p>genre, genre</p>
-          </section>
-
-          <section>
-            <h2>Platform(s)</h2>
-            <p>platform, platform</p>
-          </section>
-
-          <section>
-            <h2>Rating</h2>
-            <p>.....</p>
-          </section>
-
-          <section>
-            <h2>Beschrijving</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </section>
-
-          <section>
-            <h2>Gemiddelde speeltijd</h2>
-            <p>1u30min</p>
-          </section>
-        </article>
-      </section>
-    </main>
-
-    <footer>
+    <footer class="px-6 py-4 border-t border-zinc-300 flex justify-center">
       <p>© 2026 HIVE</p>
     </footer>
   </body>
