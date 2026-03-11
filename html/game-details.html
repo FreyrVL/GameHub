@@ -13,8 +13,185 @@
     <title>GameNamePlaceholder</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="m-[1rem] flex items-center">
+      <img
+        class="h-[5rem] self-start mr-[6rem]"
+        src="../assets/images/b-hive-lg.png"
+        alt=""
+      />
+      <div class="flex">
+        <div>
+          <input
+            class="rounded-l-[0.5rem] border-solid border-black border-[1px] h-[2rem] w-[20rem]"
+            type="text"
+            name=""
+            id=""
+            value=""
+          />
+        </div>
+        <select
+          name="filter"
+          class="rounded-r-[0.5rem] border-solid border-black border-[1px] h-[2rem]"
+        >
+          <option value="">Most Recent</option>
+          <option value="">In Collection</option>
+        </select>
+        <input
+          type="submit"
+          value="Zoeken"
+          class="ml-[0.5rem] border-black border-solid border-[1px] rounded-[0.4rem] w-[5rem] h-[2rem]"
+        />
+      </div>
+      <div class="flex items-center ml-auto mr-[1rem]">
+        <p class="mr-[1.5rem]">UserName</p>
+        <img
+          src="https://placehold.co/400"
+          alt="profile picture"
+          class="rounded-[10rem] w-[3rem] border-solid border-black border-[1px]"
+        />
+        <select class="border-none focus:outline-none focus:ring-0 w-[1rem]">
+          <option value="#"><a href="#">profile</a></option>
+        </select>
+      </div>
+    </header>
+    <main class="flex">
+      <div class="w-[15rem] pl-[1rem] text-[1.5rem] font-medium">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collecties</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </div>
+      <div class="ml-[10rem] w-[50rem]">
+        <div class="flex">
+          <!-- page contents -->
+          <img
+            src="https://placehold.co/400"
+            alt="game cover"
+            class="mr-[3rem]"
+          />
+          <div>
+            <h1 class="text-[3rem] font-bold">Game naam</h1>
+            <h2 class="text-[2rem] ml-[0.3rem]">Genre</h2>
+            <ul class="flex ml-[0.5rem]">
+              <li class="mr-[1rem]">Genre 1</li>
+              <li class="mr-[1rem]">Genre 2</li>
+            </ul>
+            <h2 class="text-[2rem] ml-[0.3rem]">Platform</h2>
+            <ul class="flex ml-[0.5rem]">
+              <li class="mr-[1rem]">Playstation</li>
+              <li class="mr-[1rem]">PC</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <h3 class="mr-[0.3rem]">Rating</h3>
+          <img src="../assets/images/icons/star-full.png" class="h-[1rem]" />
+          <img src="../assets/images/icons/star-full.png" class="h-[1rem]" />
+          <img src="../assets/images/icons/star-full.png" class="h-[1rem]" />
+          <img src="../assets/images/icons/star-half.png" class="h-[1rem]" />
+          <img src="../assets/images/icons/star-empty.png" class="h-[1rem]" />
+        </div>
+        <h2 class="text-[2rem]">Beschrijving</h2>
+        <div
+          class="border-black border-solid border-[2px] w-[100%] rounded-[0.5rem] p-[1rem]"
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            provident optio asperiores. Dicta quidem a sint accusantium,
+            quibusdam labore laborum molestias, neque odit ipsam soluta aperiam,
+            fugiat magni repudiandae aspernatur.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium nam rerum voluptatibus quia blanditiis! Cupiditate
+            dolores aspernatur nobis explicabo et, laudantium nisi assumenda
+            labore, totam ducimus id magni odit architecto?
+          </p>
+        </div>
+        <div class="flex">
+          <h2 class="text-[2rem]">Gemiddelde speeltijd:</h2>
+          <h2 class="text-[2rem] text-gray-500">1u30min</h2>
+        </div>
+        <div>
+          <h2 class="text-[2rem]">Screenshots</h2>
+          <div class="flex">
+            <img
+              src="https://placehold.co/400"
+              alt="game screenshot"
+              class="w-[18%] mr-[2.5%] rounded-[0.5rem]"
+            /><img
+              src="https://placehold.co/400"
+              alt="game screenshot"
+              class="w-[18%] mr-[2.5%] rounded-[0.5rem]"
+            /><img
+              src="https://placehold.co/400"
+              alt="game screenshot"
+              class="w-[18%] mr-[2.5%] rounded-[0.5rem]"
+            /><img
+              src="https://placehold.co/400"
+              alt="game screenshot"
+              class="w-[18%] mr-[2.5%] rounded-[0.5rem]"
+            /><img
+              src="https://placehold.co/400"
+              alt="game screenshot"
+              class="w-[18%] rounded-[0.5rem]"
+            />
+          </div>
+        </div>
+        <div>
+          <h2 class="text-[2rem]">Trailer</h2>
+          <iframe
+            width="100%"
+            height="300"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          >
+          </iframe>
+        </div>
+        <div>
+          <h2 class="text-[2rem]">Systeem vereisten</h2>
+          <ul
+            class="text-[1.2rem] border-black border-solid border-[2px] rounded-[0.5rem] p-[1rem]"
+          >
+            <li>CPU: Steen</li>
+            <li>GPU: gtx-2</li>
+            <li>Opslag: 20b</li>
+            <li>RAM: 512gb</li>
+            <li>besturingssysteem: linux</li>
+            <li>Display: 4LED's</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-[2rem]">Gelijkaardige games</h2>
+          <div class="flex">
+            <div class="w-[30%] mr-[5%]">
+              <img
+                src="https://placehold.co/400"
+                alt="game screenshot"
+                class="rounded-[0.5rem]"
+              />
+              <h3 class="text-center text-[1.5rem]">game 1</h3>
+            </div>
+            <div class="w-[30%] mr-[5%]">
+              <img
+                src="https://placehold.co/400"
+                alt="game screenshot"
+                class="rounded-[0.5rem]"
+              />
+              <h3 class="text-center text-[1.5rem]">game 2</h3>
+            </div>
+            <div class="w-[30%]">
+              <img
+                src="https://placehold.co/400"
+                alt="game screenshot"
+                class="rounded-[0.5rem]"
+              />
+              <h3 class="text-center text-[1.5rem]">game 3</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
