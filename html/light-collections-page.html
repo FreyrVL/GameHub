@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B-HIVE — Mijn collecties</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/general.css" />
+  </head>
+
+  <body class="min-h-screen flex flex-col text-zinc-900 bg-zinc-100">
+    <header
+      class="flex items-center justify-between px-6 py-4 bg-white border-b border-zinc-300"
+    >
+      <a href="/">
+        <img
+          src="../assets/images/b-hive-lg.png"
+          alt="HIVE logo"
+          class="h-12 w-auto"
+        />
+      </a>
+
+      <nav aria-label="Gebruikersmenu" class="flex items-center gap-4">
+        <a href="#" class="font-medium hover:underline">username</a>
+
+        <a
+          href="/html/night-collections-page.html"
+          class="p-2 rounded-full bg-zinc-200 hover:bg-zinc-300 transition flex items-center justify-center"
+          aria-label="Thema wijzigen"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+            />
+          </svg>
+        </a>
+
+        <details class="relative">
+          <summary
+            class="cursor-pointer list-none p-2 rounded-full bg-zinc-200 hover:bg-zinc-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </summary>
+
+          <ul
+            class="absolute right-0 mt-2 w-40 bg-white text-zinc-900 rounded-lg shadow-lg p-2 border border-zinc-300"
+          >
+            <li>
+              <a href="#" class="block px-2 py-1 hover:bg-zinc-100 rounded">
+                Instellingen
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-2 py-1 hover:bg-zinc-100 rounded">
+                Uitloggen
+              </a>
+            </li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <div class="flex flex-1">
+      <aside class="w-56 p-6 bg-white border-r border-zinc-300">
+        <nav aria-label="Hoofdmenu">
+          <ul class="space-y-4 text-lg">
+            <li><a href="#" class="block hover:underline">Home</a></li>
+            <li>
+              <a href="#" class="block font-bold text-zinc-700 hover:underline">
+                Collecties
+              </a>
+            </li>
+            <li><a href="#" class="block hover:underline">Account</a></li>
+            <li>
+              <a
+                href="/html/light-compare-page.html"
+                class="block hover:underline"
+              >
+                Comparison
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="flex-1 p-8">
+        <div class="mx-auto w-full max-w-6xl">
+          <h1 class="mb-6 text-4xl font-bold">Mijn collecties</h1>
+
+          <section
+            aria-label="Weergave en acties"
+            class="mb-8 flex flex-wrap items-center gap-3"
+          >
+            <div
+              class="flex items-center overflow-hidden rounded-lg border border-zinc-300"
+            >
+              <button
+                type="button"
+                class="flex h-10 w-10 items-center justify-center bg-white hover:bg-zinc-100"
+                aria-label="Rasterweergave"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 3.75h6.5v6.5h-6.5zm10 0h6.5v6.5h-6.5zm-10 10h6.5v6.5h-6.5zm10 0h6.5v6.5h-6.5z"
+                  />
+                </svg>
+              </button>
+
+              <button
+                type="button"
+                class="flex h-10 w-10 items-center justify-center border-l border-zinc-300 bg-white hover:bg-zinc-100"
+                aria-label="Lijstweergave"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 6.75h12m-12 5.25h12m-12 5.25h12M3.75 6.75h.008v.008H3.75V6.75Zm0 5.25h.008v.008H3.75V12Zm0 5.25h.008v.008H3.75v-.008Z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <button
+              type="button"
+              class="h-10 rounded-lg border border-zinc-300 bg-white px-6 font-medium hover:bg-zinc-100"
+            >
+              Collectie aanmaken
+            </button>
+
+            <button
+              type="button"
+              class="flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-300 bg-white hover:bg-zinc-100"
+              aria-label="Edit"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931ZM19.5 7.125 16.875 4.5"
+                />
+              </svg>
+            </button>
+          </section>
+
+          <section
+            aria-label="Overzicht van collecties"
+            class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+          >
+            <!-- CARD -->
+            <article
+              class="group overflow-hidden rounded-lg border border-zinc-300 bg-white transition duration-300 hover:shadow-xl"
+            >
+              <a href="#" class="block">
+                <div class="p-2">
+                  <img
+                    src="../assets/images/projects/collection-image.png"
+                    alt="Collectie afbeelding"
+                    class="aspect-square w-full rounded-md border border-zinc-300 object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+
+                <h2
+                  class="border-t border-zinc-300 px-4 py-3 text-lg font-medium"
+                >
+                  Mijn XBox Games
+                </h2>
+              </a>
+            </article>
+
+            <!-- herhaal -->
+            <article
+              class="group overflow-hidden rounded-lg border border-zinc-300 bg-white transition duration-300 hover:shadow-xl"
+            >
+              <a href="#" class="block">
+                <div class="p-2">
+                  <img
+                    src="../assets/images/projects/collection-image.png"
+                    class="aspect-square w-full rounded-md border border-zinc-300 object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <h2
+                  class="border-t border-zinc-300 px-4 py-3 text-lg font-medium"
+                >
+                  Mijn ps5 games
+                </h2>
+              </a>
+            </article>
+
+            <article
+              class="group overflow-hidden rounded-lg border border-zinc-300 bg-white transition duration-300 hover:shadow-xl"
+            >
+              <a href="#" class="block">
+                <div class="p-2">
+                  <img
+                    src="../assets/images/projects/collection-image.png"
+                    class="aspect-square w-full rounded-md border border-zinc-300 object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <h2
+                  class="border-t border-zinc-300 px-4 py-3 text-lg font-medium"
+                >
+                  mijn steam games
+                </h2>
+              </a>
+            </article>
+
+            <article
+              class="group overflow-hidden rounded-lg border border-zinc-300 bg-white transition duration-300 hover:shadow-xl"
+            >
+              <a href="#" class="block">
+                <div class="p-2">
+                  <img
+                    src="../assets/images/projects/collection-image.png"
+                    class="aspect-square w-full rounded-md border border-zinc-300 object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <h2
+                  class="border-t border-zinc-300 px-4 py-3 text-lg font-medium"
+                >
+                  100% completed games
+                </h2>
+              </a>
+            </article>
+
+            <article
+              class="group overflow-hidden rounded-lg border border-zinc-300 bg-white transition duration-300 hover:shadow-xl"
+            >
+              <a href="#" class="block">
+                <div class="p-2">
+                  <img
+                    src="../assets/images/projects/collection-image.png"
+                    class="aspect-square w-full rounded-md border border-zinc-300 object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <h2
+                  class="border-t border-zinc-300 px-4 py-3 text-lg font-medium"
+                >
+                  games die ik samen met mijn broer speel
+                </h2>
+              </a>
+            </article>
+
+            <article
+              class="group overflow-hidden rounded-lg border border-zinc-300 bg-white transition duration-300 hover:shadow-xl"
+            >
+              <a href="#" class="block">
+                <div class="p-2">
+                  <img
+                    src="../assets/images/projects/collection-image.png"
+                    class="aspect-square w-full rounded-md border border-zinc-300 object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <h2
+                  class="border-t border-zinc-300 px-4 py-3 text-lg font-medium"
+                >
+                  oldschool games
+                </h2>
+              </a>
+            </article>
+
+            <article
+              class="group overflow-hidden rounded-lg border border-zinc-300 bg-white transition duration-300 hover:shadow-xl"
+            >
+              <a href="#" class="block">
+                <div class="p-2">
+                  <img
+                    src="../assets/images/projects/collection-image.png"
+                    class="aspect-square w-full rounded-md border border-zinc-300 object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <h2
+                  class="border-t border-zinc-300 px-4 py-3 text-lg font-medium"
+                >
+                  slechtste games ooit
+                </h2>
+              </a>
+            </article>
+
+            <article
+              class="group overflow-hidden rounded-lg border border-zinc-300 bg-white transition duration-300 hover:shadow-xl"
+            >
+              <a href="#" class="block">
+                <div class="p-2">
+                  <img
+                    src="../assets/images/projects/collection-image.png"
+                    class="aspect-square w-full rounded-md border border-zinc-300 object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <h2
+                  class="border-t border-zinc-300 px-4 py-3 text-lg font-medium"
+                >
+                  mijn top 5
+                </h2>
+              </a>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer
+      class="px-6 py-4 flex justify-center border-t border-zinc-300 bg-white"
+    >
+      <p>© 2026 B-HIVE</p>
+    </footer>
+  </body>
+</html>
