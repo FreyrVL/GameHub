@@ -11,23 +11,37 @@
 
   <body class="min-h-screen flex flex-col text-black">
     <header
-      class="flex items-center justify-between px-6 py-4 bg-zinc-900 text-white"
+      class="flex items-center justify-between px-6 py-4 text-white bg-mist-800"
     >
-      <a href="/"
-        ><img
+      <a href="/">
+        <img
           src="../assets/images/b-hive-lg.png"
           alt="HIVE logo"
           class="h-12 w-auto"
-      /></a>
+        />
+      </a>
 
       <nav aria-label="Gebruikersmenu" class="flex items-center gap-4">
         <a href="#" class="font-medium hover:underline">username</a>
 
         <button
           type="button"
-          class="p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 transition"
+          class="p-2 rounded-full bg-zinc-800 hover:bg-mist-800 transition"
         >
-          🌙
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+            />
+          </svg>
         </button>
 
         <details class="relative">
@@ -46,8 +60,8 @@
               >
             </li>
             <li>
-              <a href="#" class="block px-2 py-1 hover:bg-zinc-100"
-                >Uitloggen</a
+              <a href="#" class="block px-2 py-1 hover:bg-zinc-100">
+                Uitloggen</a
               >
             </li>
           </ul>
@@ -56,7 +70,7 @@
     </header>
 
     <div class="flex flex-1">
-      <aside class="w-56 p-6 border-r border-zinc-300">
+      <aside class="w-56 p-6 text-white bg-mist-900">
         <nav aria-label="Hoofdmenu">
           <ul class="space-y-4 text-lg font-medium">
             <li><a href="#" class="block hover:underline">Home</a></li>
@@ -66,7 +80,7 @@
         </nav>
       </aside>
 
-      <main class="flex-1 p-8">
+      <main class="flex-1 p-8 bg-mist-900 text-white">
         <div class="mx-auto w-full max-w-6xl">
           <p class="mb-8 text-xl font-semibold">
             <a href="#" class="hover:underline">Game vergelijking verlaten</a>
@@ -86,7 +100,7 @@
 
                 <button
                   type="button"
-                  class="absolute top-2 left-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center"
+                  class="absolute top-2 left-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center text-black"
                 >
                   +
                 </button>
@@ -95,7 +109,16 @@
                   type="button"
                   class="absolute top-2 right-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center"
                 >
-                  ♥
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="size-5 text-black"
+                  >
+                    <path
+                      d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z"
+                    />
+                  </svg>
                 </button>
               </figure>
 
@@ -142,7 +165,7 @@
 
                 <button
                   type="button"
-                  class="absolute top-2 left-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center"
+                  class="absolute top-2 left-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center text-black"
                 >
                   +
                 </button>
@@ -151,7 +174,16 @@
                   type="button"
                   class="absolute top-2 right-2 bg-white border rounded-full w-8 h-8 flex items-center justify-center"
                 >
-                  ♥
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="size-5 text-black"
+                  >
+                    <path
+                      d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z"
+                    />
+                  </svg>
                 </button>
               </figure>
 
@@ -192,7 +224,9 @@
       </main>
     </div>
 
-    <footer class="px-6 py-4 border-t border-zinc-300 flex justify-center">
+    <footer
+      class="px-6 py-4 border-t border-mist-300 flex justify-center bg-mist-800 text-black"
+    >
       <p>© 2026 HIVE</p>
     </footer>
   </body>
