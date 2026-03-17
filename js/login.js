@@ -14,12 +14,7 @@ formEl.addEventListener("submit", function (event) {
     // REPLACE THIS LINK TO THE HOME PAGE!!!!!!!!!!
     window.location.href = "https://stackoverflow.com";
 
-    console.log("succes");
   } else {
-    console.log("try again");
-    console.log(
-      document.querySelector("#errormsg").classList.contains("hidden"),
-    );
     if (document.querySelector("#errormsg").classList.contains("hidden")) {
       document.querySelector("#errormsg").classList.remove("hidden");
     }
