@@ -10,6 +10,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../css/general.css" />
+    <script type="module" src="../js/login.js"></script>
     <title>Login</title>
   </head>
   <body class="flex flex-col items-center hover:cursor-default">
@@ -23,21 +24,23 @@
       <h2 class="text-[1rem] font-normal self-center">by B-hive</h2>
     </header>
     <main>
-      <form action="" method="get">
+      <form action="" method="get" id="form">
         <div class="flex flex-col text-[1rem] w-[15rem]">
           <label for="name">gebruikersnaam/e-mail</label>
           <input
             type="text"
             name="username"
+            id="username"
             class="mt-[0.4rem] mb-[0.4rem] border-solid border-[1px] border-black rounded-[0.2rem] hover:cursor-text"
             required
           />
         </div>
         <div class="flex flex-col text-[1rem] w-[15rem]">
-          <label for="email">wachtwoord</label>
+          <label for="pwd">wachtwoord</label>
           <input
             type="password"
             name="password"
+            id="password"
             class="mt-[0.4rem] mb-[0.4rem] border-solid border-[1px] border-black rounded-[0.2rem] hover:cursor-text font-[Verdana]"
             required
           />
@@ -48,13 +51,18 @@
           <a href="#">wachtwoord vergeten ></a>
         </div>
         <div class="flex flex-col text-[1rem] w-[15rem]">
+          <p class="text-red-700 hidden" id="errormsg">
+            incorrect username or password
+          </p>
           <input
             type="submit"
+            id="login"
             value="&nbsp&nbsp⟶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Login"
             class="self-center rounded-[1rem] w-[75%] m-[0.2rem] p-[0.4rem] hover:cursor-pointer text-white bg-black text-left"
           />
           <input
             type="submit"
+            id="register"
             value="Registeren"
             class="self-center text-center border-solid rounded-[1rem] border-[1px] w-[75%] m-[0.2rem] p-[0.4rem] hover:cursor-pointer"
           />
