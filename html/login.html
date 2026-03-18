@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl-BE">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,56 +10,108 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../css/general.css" />
-    <title>Login</title>
+    <title>B-HIVE — Login</title>
   </head>
-  <body class="flex flex-col items-center hover:cursor-default">
-    <header class="flex flex-col mt-[6rem] mb-[1rem]">
-      <img
-        class="w-[7rem] self-center"
-        src="../assets/images/b-hive.png"
-        alt=""
-      />
-      <h1 class="text-[3.6rem] font-bold">GameHub</h1>
-      <h2 class="text-[1rem] font-normal self-center">by B-hive</h2>
-    </header>
-    <main>
-      <form action="" method="get">
-        <div class="flex flex-col text-[1rem] w-[15rem]">
-          <label for="name">gebruikersnaam/e-mail</label>
-          <input
-            type="text"
-            name="username"
-            class="mt-[0.4rem] mb-[0.4rem] border-solid border-[1px] border-black rounded-[0.2rem] hover:cursor-text"
-            required
-          />
-        </div>
-        <div class="flex flex-col text-[1rem] w-[15rem]">
-          <label for="email">wachtwoord</label>
-          <input
-            type="password"
-            name="password"
-            class="mt-[0.4rem] mb-[0.4rem] border-solid border-[1px] border-black rounded-[0.2rem] hover:cursor-text font-[Verdana]"
-            required
-          />
-        </div>
-        <div
-          class="opacity-[0.8] underline text-[0.8rem] pt-[0.7rem] pb-[0.7rem]"
+
+  <body class="min-h-screen flex flex-col bg-mist-800 text-white">
+    <header
+      class="col-span-full p-3 border-b-2 border-mist-600 bg-mist-900/80 grid grid-cols-3 items-center"
+    >
+      <a href="/html/gamehub.html">
+        <img
+          class="w-32"
+          src="https://i.ibb.co/zWf54Dzw/b-hive-lg.png"
+          alt="B-HIVE logo"
+        />
+      </a>
+
+      <div class="flex justify-center">
+        <h1 class="text-2xl font-bold tracking-wide">Login</h1>
+      </div>
+
+      <nav class="flex items-center justify-end gap-4">
+        <a
+          href="/index.html"
+          class="font-medium hover:text-green-500 relative after:bg-green-500 after:absolute after:h-[2px] after:w-0 after:bottom-[-2px] after:left-0 hover:after:w-full after:transition-all after:duration-300"
         >
-          <a href="#">wachtwoord vergeten ></a>
-        </div>
-        <div class="flex flex-col text-[1rem] w-[15rem]">
-          <input
-            type="submit"
-            value="&nbsp&nbsp⟶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Login"
-            class="self-center rounded-[1rem] w-[75%] m-[0.2rem] p-[0.4rem] hover:cursor-pointer text-white bg-black text-left"
+          Home
+        </a>
+      </nav>
+    </header>
+
+    <main class="flex-1 flex items-center justify-center px-6 py-12">
+      <section
+        class="w-full max-w-md rounded-2xl border-2 border-mist-700 bg-mist-900/80 p-8 shadow-2xl"
+      >
+        <div class="mb-8 flex flex-col items-center text-center">
+          <img
+            class="mb-4 w-24"
+            src="../assets/images/b-hive.png"
+            alt="B-HIVE icoon"
           />
-          <input
-            type="submit"
-            value="Registeren"
-            class="self-center text-center border-solid rounded-[1rem] border-[1px] w-[75%] m-[0.2rem] p-[0.4rem] hover:cursor-pointer"
-          />
+          <h2 class="text-4xl font-bold">GameHub</h2>
+          <p class="text-mist-300">by B-HIVE</p>
         </div>
-      </form>
+
+        <form action="" method="get" class="space-y-5">
+          <div class="flex flex-col gap-2">
+            <label for="username" class="text-sm font-medium">
+              Gebruikersnaam / e-mail
+            </label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              class="rounded-lg border border-mist-600 bg-mist-800 px-4 py-2 text-white placeholder:text-mist-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Voer je gebruikersnaam of e-mail in"
+              required
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label for="password" class="text-sm font-medium">
+              Wachtwoord
+            </label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              class="rounded-lg border border-mist-600 bg-mist-800 px-4 py-2 text-white placeholder:text-mist-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Voer je wachtwoord in"
+              required
+            />
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-sm text-mist-300 underline hover:text-green-400 transition"
+            >
+              Wachtwoord vergeten?
+            </a>
+          </div>
+
+          <div class="flex flex-col gap-3 pt-2">
+            <a
+              href="/html/gamehub.html"
+              class="rounded-full bg-green-700 px-4 py-2 text-center font-semibold text-white transition hover:bg-green-600 hover:shadow-lg hover:shadow-green-500/20"
+            >
+              ⟶ Login
+            </a>
+
+            <a
+              href="#"
+              class="rounded-full border border-mist-500 px-4 py-2 text-center font-semibold text-white transition hover:bg-mist-700 hover:border-green-500"
+            >
+              Registeren
+            </a>
+          </div>
+        </form>
+      </section>
     </main>
+
+    <footer class="px-6 py-4 flex justify-center">
+      <p>© 2026 B-HIVE</p>
+    </footer>
   </body>
 </html>
