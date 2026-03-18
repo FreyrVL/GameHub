@@ -9,24 +9,32 @@
     <link rel="stylesheet" href="../css/general.css" />
   </head>
 
-  <body class="min-h-screen flex flex-col text-white bg-mist-800">
+  <body class="min-h-screen flex flex-col bg-gradient-to-b from-mist-950 to-mist-900 bg-pattern text-white">
     <header
-      class="flex items-center justify-between px-6 py-4 bg-zinc-900 text-white"
+      class="flex items-center justify-between p-3 border-b-2 border-mist-600 bg-mist-900/80"
     >
-      <a href="/">
+      <a href="/html/gamehub.html">
         <img
-          src="../assets/images/b-hive-lg.png"
-          alt="HIVE logo"
-          class="h-12 w-auto"
+          class="w-32"
+          src="https://i.ibb.co/zWf54Dzw/b-hive-lg.png"
+          alt="B-HIVE logo"
         />
       </a>
 
-      <nav aria-label="Gebruikersmenu" class="flex items-center gap-4">
-        <a href="#" class="font-medium hover:underline">username</a>
+      <nav
+        aria-label="Gebruikersmenu"
+        class="flex items-center gap-4 justify-end"
+      >
+        <a
+          href="#"
+          class="font-medium hover:text-green-500 relative after:bg-green-500 after:absolute after:h-[2px] after:w-0 after:bottom-[-2px] after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+        >
+          username
+        </a>
 
         <a
           href="/html/light-collections-page.html"
-          class="p-2 rounded-full bg-mist-800 hover:bg-mist-700 transition flex items-center justify-center"
+          class="p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 transition flex items-center justify-center"
           aria-label="Thema wijzigen"
         >
           <svg
@@ -87,34 +95,34 @@
     </header>
 
     <div class="flex flex-1">
-      <aside class="w-56 p-6">
-        <nav aria-label="Hoofdmenu">
-          <ul class="space-y-4 text-lg">
-            <li>
-              <a href="/html/gamehub.html" class="block hover:underline"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block font-bold hover:underline text-mist-400"
-                >Collecties</a
-              >
-            </li>
-            <li><a href="#" class="block hover:underline">Account</a></li>
-            <li>
-              <a
-                href="/html/night-compare-page.html"
-                class="block hover:underline"
-                >Vergelijking</a
-              >
-            </li>
-            <li>
-              <a href="/html/guessing-game.html" class="block hover:underline">
-                Guessing game
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <aside class="w-72 p-6 space-y-6">
+        <ul class="text-3xl space-y-2">
+          <li
+            class="hover:text-green-500 relative after:bg-green-500 after:absolute after:h-[2px] after:w-0 after:bottom-[-2px] after:left-0 hover:after:w-1/3 after:transition-all after:duration-300 cursor-pointer text-mist-400"
+          >
+            <a href="/html/gamehub.html">Home</a>
+          </li>
+          <li
+            class="hover:text-green-500 relative after:bg-green-500 after:absolute after:h-[2px] after:w-0 after:bottom-[-2px] after:left-0 hover:after:w-1/3 after:transition-all after:duration-300 cursor-pointer"
+          >
+            <a href="/html/night-collections-page.html">Collecties</a>
+          </li>
+          <li
+            class="hover:text-green-500 relative after:bg-green-500 after:absolute after:h-[2px] after:w-0 after:bottom-[-2px] after:left-0 hover:after:w-1/3 after:transition-all after:duration-300 cursor-pointer text-mist-400"
+          >
+            <a href="#">Account</a>
+          </li>
+          <li
+            class="hover:text-green-500 relative after:bg-green-500 after:absolute after:h-[2px] after:w-0 after:bottom-[-2px] after:left-0 hover:after:w-1/3 after:transition-all after:duration-300 cursor-pointer text-mist-400"
+          >
+            <a href="/html/night-compare-page.html">Vergelijking</a>
+          </li>
+          <li
+            class="hover:text-green-500 relative after:bg-green-500 after:absolute after:h-[2px] after:w-0 after:bottom-[-2px] after:left-0 hover:after:w-1/3 after:transition-all after:duration-300 cursor-pointer text-mist-400"
+          >
+            <a href="/html/guessing-game.html">Guessing game</a>
+          </li>
+        </ul>
       </aside>
 
       <main class="flex-1 p-8">
@@ -126,11 +134,11 @@
             class="mb-8 flex flex-wrap items-center gap-3"
           >
             <div
-              class="flex items-center overflow-hidden rounded-lg border border-black"
+              class="flex items-center overflow-hidden rounded-lg border border-mist-700 bg-mist-900/80"
             >
               <button
                 type="button"
-                class="flex h-10 w-10 items-center justify-center bg-mist-700 text-white hover:bg-mist-800"
+                class="flex h-10 w-10 items-center justify-center bg-mist-900 text-white hover:bg-mist-700 transition"
                 aria-label="Rasterweergave"
               >
                 <svg
@@ -151,7 +159,7 @@
 
               <button
                 type="button"
-                class="flex h-10 w-10 items-center justify-center border-l border-black bg-mist-700 text-white hover:bg-mist-800"
+                class="flex h-10 w-10 items-center justify-center border-l border-mist-700 bg-mist-900 text-white hover:bg-mist-700 transition"
                 aria-label="Lijstweergave"
               >
                 <svg
@@ -173,14 +181,14 @@
 
             <button
               type="button"
-              class="h-10 rounded-lg border border-black bg-mist-700 px-6 text-white font-medium hover:bg-mist-800"
+              class="rounded-full border border-mist-100/20 bg-mist-800 px-4 py-2 text-white hover:bg-mist-600 transition hover:ring-2 ring-green-500 duration-300"
             >
               Collectie aanmaken
             </button>
 
             <button
               type="button"
-              class="flex h-10 w-10 items-center justify-center rounded-lg border border-black bg-mist-700 text-white hover:bg-mist-800"
+              class="flex h-10 w-10 items-center justify-center rounded-full border border-mist-100/20 bg-mist-800 text-white hover:bg-mist-600 transition hover:ring-2 ring-green-500 duration-300"
               aria-label="Edit"
             >
               <svg
@@ -205,138 +213,124 @@
             class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
           >
             <article
-              class="group overflow-hidden rounded-lg border border-black bg-mist-700 text-white transition duration-300 hover:shadow-xl hover:shadow-mist-400/30"
+              class="rounded-lg overflow-hidden border-2 border-mist-700 space-y-1 cursor-pointer hover:scale-105 transition transform duration-300 group bg-mist-900 hover:shadow-2xl hover:shadow-green-500/20 hover:border-green-800"
             >
               <a href="/html/night-collection-page.html" class="block">
-                <div class="p-2">
-                  <img
-                    src="../assets/images/projects/collection-image.png"
-                    alt="Collectie afbeelding"
-                    class="aspect-square w-full rounded-md border border-black object-cover transition duration-300 group-hover:scale-105"
-                  />
+                <img
+                  class="border-green-500 border-b-2 w-full aspect-square object-cover"
+                  src="../assets/images/projects/collection-image.png"
+                  alt="Collectie afbeelding"
+                />
+                <div class="p-3 space-y-1">
+                  <h2 class="text-xl font-semibold">Mijn XBox Games</h2>
                 </div>
-                <h2 class="border-t border-black px-4 py-3 text-lg font-medium">
-                  Mijn XBox Games
-                </h2>
               </a>
             </article>
 
             <article
-              class="group overflow-hidden rounded-lg border border-black bg-mist-700 text-white transition duration-300 hover:shadow-xl hover:shadow-mist-400/30"
+              class="rounded-lg overflow-hidden border-2 border-mist-700 space-y-1 cursor-pointer hover:scale-105 transition transform duration-300 group bg-mist-900 hover:shadow-2xl hover:shadow-green-500/20 hover:border-green-800"
             >
               <a href="#" class="block">
-                <div class="p-2">
-                  <img
-                    src="../assets/images/projects/collection-image.png"
-                    alt="Collectie afbeelding"
-                    class="aspect-square w-full rounded-md border border-black object-cover transition duration-300 group-hover:scale-105"
-                  />
+                <img
+                  class="border-green-500 border-b-2 w-full aspect-square object-cover"
+                  src="../assets/images/projects/collection-image.png"
+                  alt="Collectie afbeelding"
+                />
+                <div class="p-3 space-y-1">
+                  <h2 class="text-xl font-semibold">Mijn ps5 games</h2>
                 </div>
-                <h2 class="border-t border-black px-4 py-3 text-lg font-medium">
-                  Mijn ps5 games
-                </h2>
               </a>
             </article>
 
             <article
-              class="group overflow-hidden rounded-lg border border-black bg-mist-700 text-white transition duration-300 hover:shadow-xl hover:shadow-mist-400/30"
+              class="rounded-lg overflow-hidden border-2 border-mist-700 space-y-1 cursor-pointer hover:scale-105 transition transform duration-300 group bg-mist-900 hover:shadow-2xl hover:shadow-green-500/20 hover:border-green-800"
             >
               <a href="#" class="block">
-                <div class="p-2">
-                  <img
-                    src="../assets/images/projects/collection-image.png"
-                    alt="Collectie afbeelding"
-                    class="aspect-square w-full rounded-md border border-black object-cover transition duration-300 group-hover:scale-105"
-                  />
+                <img
+                  class="border-green-500 border-b-2 w-full aspect-square object-cover"
+                  src="../assets/images/projects/collection-image.png"
+                  alt="Collectie afbeelding"
+                />
+                <div class="p-3 space-y-1">
+                  <h2 class="text-xl font-semibold">mijn steam games</h2>
                 </div>
-                <h2 class="border-t border-black px-4 py-3 text-lg font-medium">
-                  mijn steam games
-                </h2>
               </a>
             </article>
 
             <article
-              class="group overflow-hidden rounded-lg border border-black bg-mist-700 text-white transition duration-300 hover:shadow-xl hover:shadow-mist-400/30"
+              class="rounded-lg overflow-hidden border-2 border-mist-700 space-y-1 cursor-pointer hover:scale-105 transition transform duration-300 group bg-mist-900 hover:shadow-2xl hover:shadow-green-500/20 hover:border-green-800"
             >
               <a href="#" class="block">
-                <div class="p-2">
-                  <img
-                    src="../assets/images/projects/collection-image.png"
-                    alt="Collectie afbeelding"
-                    class="aspect-square w-full rounded-md border border-black object-cover transition duration-300 group-hover:scale-105"
-                  />
+                <img
+                  class="border-green-500 border-b-2 w-full aspect-square object-cover"
+                  src="../assets/images/projects/collection-image.png"
+                  alt="Collectie afbeelding"
+                />
+                <div class="p-3 space-y-1">
+                  <h2 class="text-xl font-semibold">100% completed games</h2>
                 </div>
-                <h2 class="border-t border-black px-4 py-3 text-lg font-medium">
-                  100% completed games
-                </h2>
               </a>
             </article>
 
             <article
-              class="group overflow-hidden rounded-lg border border-black bg-mist-700 text-white transition duration-300 hover:shadow-xl hover:shadow-mist-400/30"
+              class="rounded-lg overflow-hidden border-2 border-mist-700 space-y-1 cursor-pointer hover:scale-105 transition transform duration-300 group bg-mist-900 hover:shadow-2xl hover:shadow-green-500/20 hover:border-green-800"
             >
               <a href="#" class="block">
-                <div class="p-2">
-                  <img
-                    src="../assets/images/projects/collection-image.png"
-                    alt="Collectie afbeelding"
-                    class="aspect-square w-full rounded-md border border-black object-cover transition duration-300 group-hover:scale-105"
-                  />
+                <img
+                  class="border-green-500 border-b-2 w-full aspect-square object-cover"
+                  src="../assets/images/projects/collection-image.png"
+                  alt="Collectie afbeelding"
+                />
+                <div class="p-3 space-y-1">
+                  <h2 class="text-xl font-semibold">
+                    games die ik samen met mijn broer speel
+                  </h2>
                 </div>
-                <h2 class="border-t border-black px-4 py-3 text-lg font-medium">
-                  games die ik samen met mijn broer speel
-                </h2>
               </a>
             </article>
 
             <article
-              class="group overflow-hidden rounded-lg border border-black bg-mist-700 text-white transition duration-300 hover:shadow-xl hover:shadow-mist-400/30"
+              class="rounded-lg overflow-hidden border-2 border-mist-700 space-y-1 cursor-pointer hover:scale-105 transition transform duration-300 group bg-mist-900 hover:shadow-2xl hover:shadow-green-500/20 hover:border-green-800"
             >
               <a href="#" class="block">
-                <div class="p-2">
-                  <img
-                    src="../assets/images/projects/collection-image.png"
-                    alt="Collectie afbeelding"
-                    class="aspect-square w-full rounded-md border border-black object-cover transition duration-300 group-hover:scale-105"
-                  />
+                <img
+                  class="border-green-500 border-b-2 w-full aspect-square object-cover"
+                  src="../assets/images/projects/collection-image.png"
+                  alt="Collectie afbeelding"
+                />
+                <div class="p-3 space-y-1">
+                  <h2 class="text-xl font-semibold">oldschool games</h2>
                 </div>
-                <h2 class="border-t border-black px-4 py-3 text-lg font-medium">
-                  oldschool games
-                </h2>
               </a>
             </article>
 
             <article
-              class="group overflow-hidden rounded-lg border border-black bg-mist-700 text-white transition duration-300 hover:shadow-xl hover:shadow-mist-400/30"
+              class="rounded-lg overflow-hidden border-2 border-mist-700 space-y-1 cursor-pointer hover:scale-105 transition transform duration-300 group bg-mist-900 hover:shadow-2xl hover:shadow-green-500/20 hover:border-green-800"
             >
               <a href="#" class="block">
-                <div class="p-2">
-                  <img
-                    src="../assets/images/projects/collection-image.png"
-                    alt="Collectie afbeelding"
-                    class="aspect-square w-full rounded-md border border-black object-cover transition duration-300 group-hover:scale-105"
-                  />
+                <img
+                  class="border-green-500 border-b-2 w-full aspect-square object-cover"
+                  src="../assets/images/projects/collection-image.png"
+                  alt="Collectie afbeelding"
+                />
+                <div class="p-3 space-y-1">
+                  <h2 class="text-xl font-semibold">slechtste games ooit</h2>
                 </div>
-                <h2 class="border-t border-black px-4 py-3 text-lg font-medium">
-                  slechtste games ooit
-                </h2>
               </a>
             </article>
 
             <article
-              class="group overflow-hidden rounded-lg border border-black bg-mist-700 text-white transition duration-300 hover:shadow-xl hover:shadow-mist-400/30"
+              class="rounded-lg overflow-hidden border-2 border-mist-700 space-y-1 cursor-pointer hover:scale-105 transition transform duration-300 group bg-mist-900 hover:shadow-2xl hover:shadow-green-500/20 hover:border-green-800"
             >
               <a href="#" class="block">
-                <div class="p-2">
-                  <img
-                    src="../assets/images/projects/collection-image.png"
-                    alt="Collectie afbeelding"
-                    class="aspect-square w-full rounded-md border border-black object-cover transition duration-300 group-hover:scale-105"
-                  />
+                <img
+                  class="border-green-500 border-b-2 w-full aspect-square object-cover"
+                  src="../assets/images/projects/collection-image.png"
+                  alt="Collectie afbeelding"
+                />
+                <div class="p-3 space-y-1">
+                  <h2 class="text-xl font-semibold">mijn top 5</h2>
                 </div>
-                <h2 class="border-t border-black px-4 py-3 text-lg font-medium">
-                  mijn top 5
-                </h2>
               </a>
             </article>
           </section>
