@@ -1,65 +1,81 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon/logo.ico"
-      type="image/x-icon"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="../css/general.css" />
-    <title>Login</title>
-  </head>
-  <body class="flex flex-col items-center hover:cursor-default">
-    <header class="flex flex-col mt-[6rem] mb-[1rem]">
-      <img
-        class="w-[7rem] self-center"
-        src="../assets/images/b-hive.png"
-        alt=""
-      />
-      <h1 class="text-[3.6rem] font-bold">GameHub</h1>
-      <h2 class="text-[1rem] font-normal self-center">by B-hive</h2>
-    </header>
-    <main>
-      <form action="" method="get">
-        <div class="flex flex-col text-[1rem] w-[15rem]">
-          <label for="name">gebruikersnaam/e-mail</label>
-          <input
-            type="text"
-            name="username"
-            class="mt-[0.4rem] mb-[0.4rem] border-solid border-[1px] border-black rounded-[0.2rem] hover:cursor-text"
-            required
-          />
-        </div>
-        <div class="flex flex-col text-[1rem] w-[15rem]">
-          <label for="email">wachtwoord</label>
-          <input
-            type="password"
-            name="password"
-            class="mt-[0.4rem] mb-[0.4rem] border-solid border-[1px] border-black rounded-[0.2rem] hover:cursor-text font-[Verdana]"
-            required
-          />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/favicon/logo.ico" type="image/x-icon" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../css/general.css" />
+  <script defer src="/js/login.js"></script>
+  <title>Login</title>
+</head>
+
+<body class="bg-pattern flex flex-col items-center hover:cursor-default text-white">
+  <header class="flex flex-col mt-[6rem] mb-[-1rem]">
+    <img class="w-[7rem] self-center" src="../assets/images/b-hive.png" alt="" />
+    <div class="flex mt-12 gap-2 mb-12">
+      <h1 class="text-[3.6rem] font-bold leading-0 border-r-2 border-white pr-2">GameHub</h1>
+      <h2 class="text-[1rem] font-normal self-end">by B-hive</h2>
+    </div>
+  </header>
+  <main>
+
+    <form
+      class=" space-y-4 max-w-md mx-auto  bg-mist-800/30 backdrop-blur-[2px] p-14 rounded-2xl items-center flex flex-col">
+      <label class="relative inline-flex items-center cursor-pointer w-fit mt-[-1rem] mb-6">
+        <input id="toggle-register-login" type="checkbox" value="" class="sr-only peer">
         <div
-          class="opacity-[0.8] underline text-[0.8rem] pt-[0.7rem] pb-[0.7rem]"
-        >
-          <a href="#">wachtwoord vergeten ></a>
+          class="hover:border-green-500  peer duration-100 after:duration-500 w-48 h-14 bg-mist-950 peer-focus:ring-0  after:content-['Login'] after:absolute after:outline-none after:h-12 after:w-fit border-2 border-mist-700 rounded-full after:px-6 after:bg-mist-800 after:rounded-full after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-white after:font-bold peer-checked:after:translate-x-14 peer-checked:after:content-['Registreer'] peer-checked:after:border-white">
         </div>
-        <div class="flex flex-col text-[1rem] w-[15rem]">
-          <input
-            type="submit"
-            value="&nbsp&nbsp⟶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Login"
-            class="self-center rounded-[1rem] w-[75%] m-[0.2rem] p-[0.4rem] hover:cursor-pointer text-white bg-black text-left"
-          />
-          <input
-            type="submit"
-            value="Registeren"
-            class="self-center text-center border-solid rounded-[1rem] border-[1px] w-[75%] m-[0.2rem] p-[0.4rem] hover:cursor-pointer"
-          />
+      </label>
+      <div>
+        <div class="relative flex items-center">
+          <input type="email" placeholder="Gebruikersnaam/e-mail"
+            class=" px-4 py-3 pr-10 w-full rounded-full border border-mist-100/20 bg-mist-950 text-white placeholder:text-mist-300 focus:ring-2 focus:ring-green-500" />
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-4"
+            viewBox="0 0 682.667 682.667">
+            <defs>
+              <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                <path d="M0 512h512V0H0Z" data-original="#000000"></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#a)" transform="matrix(1.33 0 0 -1.33 0 682.667)">
+              <path fill="none" stroke-miterlimit="10" stroke-width="40"
+                d="M452 444H60c-22.091 0-40-17.909-40-40v-39.446l212.127-157.782c14.17-10.54 33.576-10.54 47.746 0L492 364.554V404c0 22.091-17.909 40-40 40Z"
+                data-original="#000000"></path>
+              <path
+                d="M472 274.9V107.999c0-11.027-8.972-20-20-20H60c-11.028 0-20 8.973-20 20V274.9L0 304.652V107.999c0-33.084 26.916-60 60-60h392c33.084 0 60 26.916 60 60v196.653Z"
+                data-original="#000000"></path>
+            </g>
+          </svg>
         </div>
-      </form>
-    </main>
-  </body>
+      </div>
+
+      <div>
+        <div class="relative flex items-center ">
+          <input type="password" placeholder="Wachtwoord"
+            class="focus:ring-2 focus:ring-green-500 px-4 py-3 pr-10 w-full rounded-full border border-mist-100/20 bg-mist-950 text-white placeholder:text-mist-300 " />
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb"
+            class="w-[18px] h-[18px] absolute right-4 cursor-pointer" viewBox="0 0 128 128">
+            <path
+              d="M64 104C22.127 104 1.367 67.496.504 65.943a4 4 0 0 1 0-3.887C1.367 60.504 22.127 24 64 24s62.633 36.504 63.496 38.057a4 4 0 0 1 0 3.887C126.633 67.496 105.873 104 64 104zM8.707 63.994C13.465 71.205 32.146 96 64 96c31.955 0 50.553-24.775 55.293-31.994C114.535 56.795 95.854 32 64 32 32.045 32 13.447 56.775 8.707 63.994zM64 88c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm0-40c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16z"
+              data-original="#000000"></path>
+          </svg>
+        </div>
+      </div>
+
+      <a id="forgot-password" class="underline text-sm self-start ml-2" href="">Wachtwoord vergeten ></a>
+      <a href="./night-search.html">
+        <button id="submit" type="button"
+          class="hover:border-green-500 hover:shadow-2xl hover:shadow-green-800/50 px-5 py-2.5 w-fit block mx-auto bg-mist-950 rounded-full border-mist-800 mt-2 mb-[-1rem] border-2 cursor-pointer ">
+          Inloggen
+        </button>
+      </a>
+    </form>
+  </main>
+</body>
+
 </html>
